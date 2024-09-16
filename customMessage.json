@@ -1,3 +1,5 @@
 {
-  "replacementMessage": "Ce contenu a été bloqué par CleanTwitter Extension. Support us at: hermes-ofm.com"
+  "replacementMessage": "Ce contenu a été bloqué par CleanTwitter Extension. Support us at: ",
+  "linkUrl": "https://hermes-ofm.com",
+  "linkText": "Click Here Bro"
 }
