@@ -1,56 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <title>Extension CleanTwitter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CleanTwitter - Username List</title>
+  <!-- Vous pouvez ajouter des liens CSS ici -->
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      line-height: 1.6;
     }
-    .container {
-      max-width: 800px;
-      margin: 50px auto;
+    header, section, footer {
       padding: 20px;
-      background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      max-width: 800px;
+      margin: auto;
     }
-    h1 {
+    header {
+      background: #f4f4f4;
       text-align: center;
-      color: #333;
     }
-    p {
-      text-align: center;
-      font-size: 18px;
-      color: #555;
+    nav {
+      background: #35424a;
+      color: #ffffff;
+      padding: 15px;
     }
-    .json-link {
-      display: block;
+    nav ul {
+      padding: 0;
+      list-style: none;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+    h1, h2 {
+      color: #35424a;
+    }
+    footer {
+      background: #f4f4f4;
       text-align: center;
+      padding: 10px;
       margin-top: 20px;
     }
-    .json-link a {
-      color: #0066cc;
+    .button {
+      display: inline-block;
+      background: #e8491d;
+      color: #ffffff;
+      padding: 10px 20px;
       text-decoration: none;
-      font-size: 18px;
+      margin-top: 10px;
+      border-radius: 5px;
     }
-    .json-link a:hover {
-      text-decoration: underline;
+    @media (max-width: 600px) {
+      nav ul li {
+        display: block;
+        margin: 0;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to CleanTwitter</h1>
-    <p>This repository contains the list of usernames used to block adult promotional content on X.com</p>
-    <div class="json-link">
-      <a href="usernames.json" target="_blank">View the Username List</a>
-    </div>
-  </div>
+  <!-- En-tête -->
+  <header>
+    <h1>Extension CleanTwitter</h1>
+    <p>Améliorez votre expérience Twitter</p>
+  </header>
+
+  <!-- Menu de navigation -->
+  <nav>
+    <ul>
+      <li><a href="#features">Fonctionnalités</a></li>
+      <li><a href="#installation">Installation</a></li>
+      <li><a href="#support">Soutenez-nous</a></li>
+      <li><a href="#premium">Version Premium</a></li>
+      <li><a href="#privacy-policy">Politique de confidentialité</a></li>
+      <li><a href="#get-involved">Participer</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section des fonctionnalités -->
+  <section id="features">
+    <h2>Fonctionnalités</h2>
+    <ul>
+      <li><strong>Bloquez les contenus indésirables :</strong> Cache automatiquement les tweets provenant d'une liste d'utilisateurs promotionnels adultes.</li>
+      <li><strong>Messages personnalisables :</strong> La version gratuite remplace les tweets bloqués par des messages informatifs, que nous mettons à jour régulièrement.</li>
+      <li><strong>Intégration transparente :</strong> Fonctionne en arrière-plan sans affecter la vitesse de navigation.</li>
+      <li><strong>Communauté participative :</strong> Notre base de données d'utilisateurs est continuellement mise à jour grâce aux contributions des utilisateurs.</li>
+    </ul>
+  </section>
+
+  <!-- Instructions d'installation -->
+  <section id="installation">
+    <h2>Instructions d'installation</h2>
+    <h3>Comment installer CleanTwitter</h3>
+    <p><strong>Pour Google Chrome :</strong></p>
+    <ol>
+      <li><strong>Téléchargez les fichiers de l'extension :</strong>
+        <ul>
+          <li><a href="#" class="button">Télécharger CleanTwitter Version Gratuite</a></li>
+          <li><a href="#" class="button">Télécharger CleanTwitter Version Premium</a></li>
+        </ul>
+      </li>
+      <li><strong>Activez le mode développeur :</strong>
+        <ul>
+          <li>Ouvrez Chrome et naviguez vers <code>chrome://extensions/</code>.</li>
+          <li>Activez le bouton <strong>Mode développeur</strong> en haut à droite.</li>
+        </ul>
+      </li>
+      <li><strong>Chargez l'extension :</strong>
+        <ul>
+          <li>Cliquez sur <strong>Charger l'extension non empaquetée</strong>.</li>
+          <li>Sélectionnez le dossier contenant les fichiers de l'extension CleanTwitter.</li>
+        </ul>
+      </li>
+      <li><strong>Actualisez Twitter :</strong>
+        <ul>
+          <li>Allez sur Twitter et actualisez la page pour activer CleanTwitter.</li>
+        </ul>
+      </li>
+    </ol>
+
+    <p><strong>Pour Mozilla Firefox :</strong></p>
+    <ol>
+      <li><strong>Téléchargez les fichiers de l'extension :</strong>
+        <ul>
+          <li><a href="#" class="button">Télécharger CleanTwitter Version Gratuite</a></li>
+          <li><a href="#" class="button">Télécharger CleanTwitter Version Premium</a></li>
+        </ul>
+      </li>
+      <li><strong>Chargez l'extension temporairement :</strong>
+        <ul>
+          <li>Ouvrez Firefox et naviguez vers <code>about:debugging#/runtime/this-firefox</code>.</li>
+          <li>Cliquez sur <strong>Charger un module complémentaire temporaire</strong>.</li>
+          <li>Sélectionnez le fichier <code>.xpi</code> de CleanTwitter.</li>
+        </ul>
+      </li>
+      <li><strong>Actualisez Twitter :</strong>
+        <ul>
+          <li>Allez sur Twitter et actualisez la page pour activer CleanTwitter.</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Soutenez-nous -->
+  <section id="support">
+    <h2>Soutenez-nous</h2>
+    <h3>Vos contributions font la différence</h3>
+    <p>CleanTwitter est un projet communautaire visant à améliorer votre expérience sur Twitter. Si vous trouvez cette extension utile, veuillez envisager de nous soutenir :</p>
+    <ul>
+      <li><strong>Faire un don :</strong> Vos dons nous aident à maintenir et à améliorer l'extension.
+        <ul>
+          <li><a href="#" class="button">Faire un don via PayPal</a></li>
+          <li><a href="#" class="button">Soutenir sur Patreon</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Mise à niveau vers Premium -->
+  <section id="premium">
+    <h2>Passer à la version Premium</h2>
+    <h3>Découvrez tout le potentiel de CleanTwitter</h3>
+    <p>Pour une expérience encore plus propre et transparente, passez à <strong>CleanTwitter Premium</strong> :</p>
+    <ul>
+      <li><strong>Suppression complète du contenu :</strong> La version premium cache entièrement les tweets indésirables sans messages de remplacement.</li>
+      <li><strong>Achat unique :</strong> Accès à vie pour un seul paiement.
+        <ul>
+          <li><a href="#" class="button">Acheter CleanTwitter Premium</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Politique de confidentialité -->
+  <section id="privacy-policy">
+    <h2>Politique de confidentialité</h2>
+    <h3>Votre vie privée compte pour nous</h3>
+    <p><strong>Dernière mise à jour : [Date]</strong></p>
+    <p>Chez CleanTwitter, nous nous engageons à protéger votre vie privée. Cette politique explique comment nous traitons vos données lorsque vous utilisez notre extension.</p>
+    <h4>Informations que nous collectons :</h4>
+    <ul>
+      <li><strong>Stockage de données local :</strong> L'extension stocke certaines données localement sur votre appareil, telles que :
+        <ul>
+          <li>La liste des noms d'utilisateurs à bloquer.</li>
+          <li>Paramètres et préférences personnalisés.</li>
+        </ul>
+      </li>
+    </ul>
+    <h4>Ce que nous ne collectons pas :</h4>
+    <ul>
+      <li><strong>Données personnelles :</strong> Nous ne collectons ni ne transmettons aucune information personnelle.</li>
+      <li><strong>Historique de navigation :</strong> Nous n'accédons pas à votre historique de navigation et ne le stockons pas.</li>
+      <li><strong>Contenu utilisateur :</strong> Nous ne lisons ni ne stockons aucun contenu de votre fil Twitter.</li>
+    </ul>
+    <h4>Comment nous utilisons les informations :</h4>
+    <p>Toutes les données stockées localement sont utilisées uniquement pour fournir les fonctionnalités de l'extension, comme le blocage de contenus spécifiques.</p>
+    <h4>Services tiers :</h4>
+    <p>Nous ne partageons vos données avec aucun service tiers.</p>
+    <h4>Vos choix :</h4>
+    <ul>
+      <li><strong>Contrôle :</strong> Vous pouvez désactiver ou désinstaller l'extension à tout moment via les paramètres de votre navigateur.</li>
+      <li><strong>Transparence :</strong> Notre code est disponible pour examen sur GitHub.</li>
+    </ul>
+    <h4>Contactez-nous :</h4>
+    <p>Si vous avez des questions ou des préoccupations concernant cette politique de confidentialité, veuillez nous contacter à <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+  </section>
+
+  <!-- Participer -->
+  <section id="get-involved">
+    <h2>Participer</h2>
+    <h3>Rejoignez notre communauté</h3>
+    <ul>
+      <li><strong>Contribuer :</strong> Aidez-nous à nous améliorer en contribuant à notre <a href="#">dépôt GitHub</a>.</li>
+      <li><strong>Commentaires :</strong> Partagez vos réflexions et suggestions à <a href="mailto:your-email@example.com">your-email@example.com</a>.</li>
+    </ul>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <p>&copy; 2023 CleanTwitter. Tous droits réservés.</p>
+  </footer>
+
+  <!-- Vous pouvez ajouter des scripts JS ici -->
 </body>
 </html>
